@@ -8,17 +8,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`300`, `400`, `600`],
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-plugin-sass-resources`,
       options: {
         resources: [`./src/styling/resources.scss`],
@@ -29,7 +18,7 @@ module.exports = {
       options: {
         name: `Studio FrostBit`,
         short_name: `Studio FrostBit`,
-        start_url: `/`,
+        start_url: `.`,
         background_color: `#ffffff`,
         theme_color: `#29b27e`,
         display: `minimal-ui`,
