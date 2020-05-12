@@ -1,0 +1,37 @@
+@keyframes crystal {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1.8);
+  }
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crystal {
+  animation: crystal 2.5s ease-in-out alternate infinite;
+  position: relative;
+  left: 7px;
+}
+
+.shadow {
+  margin-top: 20px;
+
+  animation: shadow 2.5s ease-in-out alternate infinite;
+}

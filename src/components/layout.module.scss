@@ -1,0 +1,16 @@
+:global {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: inherit;
+    color: inherit;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.container {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
