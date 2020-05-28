@@ -5,7 +5,7 @@
   margin-bottom: 0px;
 
   @include tablet {
-    margin-bottom: calc(80px - 20vw);
+    margin-bottom: calc(120px - 20vw);
   }
 }
 
@@ -29,7 +29,11 @@
     justify-content: center;
     padding-left: 64px;
     padding-right: 64px;
-    padding-bottom: calc(-80px + 32px + 20vw);
+    padding-bottom: calc(-120px + 48px + 20vw);
+  }
+
+  @include desktop {
+    padding-bottom: calc(-120px + 64px + 20vw);
   }
 
   @media (min-width: 1200px) {
@@ -64,12 +68,13 @@
   z-index: 0;
 
   position: relative;
-  color: white;
-  font-weight: 300;
-  font-size: 30px;
+  color: rgba(white, 0.95);
+  font-size: 35px;
+  font-weight: 400;
   margin-bottom: 20px;
 
   @media (min-width: 700px) {
+    font-weight: 300;
     font-size: 50px;
     margin-bottom: 70px;
   }
