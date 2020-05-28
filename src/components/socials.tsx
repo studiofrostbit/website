@@ -1,14 +1,22 @@
-import React, { ReactNode } from "react"
+import React from "react"
 
 import styles from "./socials.module.scss"
 import { IconProps, Icon } from "./Icon"
+import socialsTitleUnderlineImage from "../images/Socials-Title-Underline.svg"
 
 export function Socials() {
   return (
     <section className={styles.container}>
       <div className={styles.background} />
       <div className={styles.subContainer}>
-        <h2 className={styles.title}>Our socials</h2>
+        <h2 className={styles.title}>
+          Our socials
+          <img
+            className={styles.underlineImage}
+            src={socialsTitleUnderlineImage}
+            alt=""
+          />
+        </h2>
         <div className={styles.socialsList}>
           <SocialLink url="#" icon="discord" label="Discord" />
           <SocialLink

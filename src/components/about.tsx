@@ -2,12 +2,20 @@ import React from "react"
 
 import styles from "./about.module.scss"
 import { FloatingThing } from "./floating-thing"
+import aboutUsTitleUnderlineImage from "../images/About-Us-Title-Underline.svg"
 
 export function About() {
   return (
     <section>
       <div className={styles.subContainer}>
-        <h2 className={styles.title}>About us</h2>
+        <h2 className={styles.title}>
+          About us
+          <img
+            className={styles.underlineImage}
+            src={aboutUsTitleUnderlineImage}
+            alt=""
+          />
+        </h2>
         <p className={styles.bodyText}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

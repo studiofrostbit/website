@@ -1,13 +1,10 @@
 .container {
   display: flex;
+  position: relative;
 
   margin-bottom: 0px;
 
   @include tablet {
-    margin-bottom: calc(80px - 20vw);
-  }
-
-  @include desktop {
     margin-bottom: calc(80px - 20vw);
   }
 }
@@ -17,53 +14,95 @@
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
 
   margin-left: auto;
   margin-right: auto;
 
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   max-width: 1200px;
   padding: 16px;
-  padding-top: 32px;
 
   @include tablet {
-    padding: 64px;
-    padding-top: 48px;
+    justify-content: center;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: calc(-80px + 32px + 20vw);
   }
 
-  @include desktop {
-    padding: 64px;
-    padding-top: 64px;
+  @media (min-width: 1200px) {
+    padding-top: 16px;
+  }
+
+  @media (min-width: 1500px) {
+    padding-top: 16px;
   }
 }
 
 .backgroundImage {
   position: relative;
   width: 100%;
+  filter: brightness(0.9);
 
-  top: 0px;
+  top: -10px;
 
   @include tablet {
-    top: calc(80px - 20vw);
+    top: calc(120px - 20vw);
   }
 
   @include desktop {
-    top: calc(80px - 20vw);
+    top: calc(120px - 20vw);
   }
 }
 
 .title {
-  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 0;
 
+  position: relative;
   color: white;
   font-weight: 300;
   font-size: 30px;
+  margin-bottom: 20px;
 
-  @include tablet {
+  @media (min-width: 700px) {
     font-size: 50px;
+    margin-bottom: 70px;
   }
 
-  @include desktop {
+  @media (min-width: 1200px) {
     font-size: 70px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: 1500px) {
+    font-size: 70px;
+    margin-bottom: 100px;
+  }
+}
+
+.underlineImage {
+  position: absolute;
+  top: 100%;
+
+  display: none;
+
+  @media (min-width: 700px) {
+    display: block;
+    height: 70px;
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+    height: 100px;
+  }
+
+  @media (min-width: 1500px) {
+    display: block;
+    height: 100px;
   }
 }

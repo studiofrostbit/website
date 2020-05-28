@@ -44,11 +44,32 @@
 }
 
 .title {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  margin-bottom: 32px;
   font-weight: 400;
   color: black;
   opacity: 0.8;
   font-size: 49px;
-  margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 32px + 35px;
+  }
+}
+
+.underlineImage {
+  position: absolute;
+  top: 100%;
+
+  display: none;
+
+  @include tablet {
+    display: block;
+    height: 35px;
+  }
 }
 
 .socialsList {
@@ -80,11 +101,6 @@
 
   &:hover {
     fill: #22a477;
-  }
-
-  @include tablet {
-    width: 128px;
-    height: 128px;
   }
 
   @include desktop {
