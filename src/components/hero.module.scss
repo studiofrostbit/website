@@ -2,11 +2,15 @@
   display: flex;
   position: relative;
 
-  margin-bottom: 0px;
+  margin-bottom: calc(-48px);
 
-  @include tablet {
-    margin-bottom: calc(120px - 20vw);
+  @include desktop {
+    margin-bottom: 0px;
   }
+
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subContainer {
@@ -24,16 +28,17 @@
   align-items: flex-end;
   max-width: 1200px;
   padding: 16px;
+  padding-bottom: 80px;
 
   @include tablet {
     justify-content: center;
     padding-left: 64px;
     padding-right: 64px;
-    padding-bottom: calc(-120px + 48px + 20vw);
+    // padding-bottom: calc(-120px + 48px + 20vw);
   }
 
   @include desktop {
-    padding-bottom: calc(-120px + 64px + 20vw);
+    // padding-bottom: calc(-120px + 64px + 20vw);
   }
 
   @media (min-width: 1200px) {
@@ -48,16 +53,12 @@
 .backgroundImage {
   position: relative;
   width: 100%;
-  filter: brightness(0.9);
+  filter: brightness(0.8);
 
-  top: -10px;
+  // top: -10px;
 
   @include tablet {
-    top: calc(120px - 20vw);
-  }
-
-  @include desktop {
-    top: calc(120px - 20vw);
+    // top: calc(200px - 20vw);
   }
 }
 

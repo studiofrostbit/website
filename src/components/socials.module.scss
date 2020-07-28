@@ -2,21 +2,59 @@
   z-index: 1;
 
   position: relative;
-  margin-top: 50px;
-}
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 
-.background {
-  z-index: -1;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-color: #e5e5e5;
 
-  transform: skewY(-4deg);
+  &::before {
+    display: none;
+    z-index: 10;
+    content: "";
+    position: absolute;
+    height: 100px;
+    top: -100px + 1px;
+    right: 0;
+    left: 0;
+    background-color: #e5e5e5;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &::after {
+    display: none;
+    z-index: 10;
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -100px + 1px;
+    right: 0;
+    left: 0;
+    background-color: #e5e5e5;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+
+    @include tablet {
+      display: block;
+    }
+  }
 }
+
+// .background {
+//   z-index: -1;
+
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-color: #e5e5e5;
+
+//   transform: skewY(-4deg);
+// }
 
 .subContainer {
   display: flex;
@@ -32,13 +70,13 @@
 
   @include tablet {
     padding: 64px;
-    padding-top: 128px;
+    padding-top: 160px;
     padding-bottom: 128px;
   }
 
   @include desktop {
     padding: 64px;
-    padding-top: 128px;
+    padding-top: 160px;
     padding-bottom: 128px;
   }
 }

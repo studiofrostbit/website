@@ -1,8 +1,8 @@
 import React from "react"
 
 import styles from "./hero.module.scss"
-import { HeroImage } from "./icons/HeroImage"
 import heroTitleUnderlineImage from "../images/Hero-Title-Underline.svg"
+import heroImage from "../images/HeroImage.png"
 
 interface HeroProps {
   siteTitle: string
@@ -11,7 +11,7 @@ interface HeroProps {
 export function Hero(props: HeroProps) {
   return (
     <header className={styles.container}>
-      <HeroImage className={styles.backgroundImage} />
+      <img src={heroImage} className={styles.backgroundImage} />
       <div className={styles.subContainer}>
         <h1 className={styles.title}>
           {props.siteTitle}

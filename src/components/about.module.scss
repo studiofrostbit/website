@@ -1,3 +1,49 @@
+.container {
+  z-index: 10;
+  position: relative;
+  background-color: white;
+
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -64px;
+  filter: drop-shadow(0px 4px 8px hsla(0, 0%, 0%, 0.1));
+
+  &::before {
+    display: none;
+    z-index: 10;
+    content: "";
+    position: absolute;
+    height: 100px;
+    top: -100px + 1px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &::after {
+    display: none;
+    z-index: 10;
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -100px + 1px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+
+    @include tablet {
+      display: block;
+    }
+  }
+}
+
 .subContainer {
   position: relative;
   margin-left: auto;

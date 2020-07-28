@@ -6,7 +6,7 @@ import aboutUsTitleUnderlineImage from "../images/About-Us-Title-Underline.svg"
 
 export function About() {
   return (
-    <section>
+    <section className={styles.container}>
       <div className={styles.subContainer}>
         <h2 className={styles.title}>
           About us
