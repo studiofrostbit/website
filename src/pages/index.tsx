@@ -10,7 +10,7 @@ import { Footer } from "../components/footer"
 export default function IndexPage() {
   return (
     <Layout>
-      <SEO />
+      <SEO title="Studio FrostBit" />
       <Hero siteTitle="Studio FrostBit" />
       <About />
       <Socials />

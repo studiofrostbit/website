@@ -11,7 +11,7 @@ interface HeroProps {
 export function Hero(props: HeroProps) {
   return (
     <header className={styles.container}>
-      <img src={heroImage} className={styles.backgroundImage} />
+      <img src={heroImage} alt="" className={styles.backgroundImage} />
       <div className={styles.subContainer}>
         <h1 className={styles.title}>
           {props.siteTitle}

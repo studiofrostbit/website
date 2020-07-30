@@ -1,12 +1,15 @@
 .container {
   position: relative;
-  margin-top: -96px;
+  // margin-top: -96px;
   background-color: #38363f;
-  height: 400px;
 
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+
+  @include tablet {
+    height: 300px;
+  }
 }
 
 .subContainer {

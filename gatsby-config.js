@@ -6,6 +6,7 @@ module.exports = {
     author: `@Studio_FrostBit`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-sass-resources`,
