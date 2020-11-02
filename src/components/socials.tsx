@@ -18,14 +18,18 @@ export function Socials() {
           />
         </h2>
         <div className={styles.socialsList}>
-          <SocialLink url="#" icon="discord" label="Discord" />
+          <SocialLink 
+            url="https://discord.gg/FPEZGz8" 
+            icon="discord" 
+            label="Discord" 
+          />
           <SocialLink
             url="https://www.instagram.com/studiofrostbit/"
             icon="instagram"
             label="Instagram"
           />
           <SocialLink
-            url="https://twitter.com/Studio_FrostBit"
+            url="https://twitter.com/StudioFrostBit"
             icon="twitter"
             label="Twitter"
           />
