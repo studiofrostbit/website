@@ -7,7 +7,7 @@ export function Footer() {
     <section className={styles.container}>
       <div className={styles.subContainer}>
         <p className={styles.copyright}>
-          © 2020 Studio FrostBit. <br />
+          © 2020 Studio Frostbit. <br />
           All rights reserved.
         </p>
         <a href="mailto:contact@studiofrostbit.com" className={styles.contact}>

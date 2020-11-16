@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: "/website",
   siteMetadata: {
-    title: `Studio FrostBit`,
-    description: `Lorem ipsum`,
-    author: `@Studio_FrostBit`,
+    title: `Studio Frostbit`,
+    description: `Studio Frostbit - Student Company`,
+    author: `@studiofrostbit`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Studio FrostBit`,
-        short_name: `Studio FrostBit`,
+        name: `Studio Frostbit`,
+        short_name: `Studio Frostbit`,
         start_url: `.`,
         background_color: `#ffffff`,
         theme_color: `#29b27e`,

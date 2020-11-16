@@ -29,7 +29,7 @@ export function Socials() {
             label="Instagram"
           />
           <SocialLink
-            url="https://twitter.com/StudioFrostBit"
+            url="https://twitter.com/studiofrostbit"
             icon="twitter"
             label="Twitter"
           />
