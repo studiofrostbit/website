@@ -34,11 +34,6 @@ export function Socials() {
             label="Twitter"
           />
           <SocialLink
-            url="https://www.youtube.com/channel/UCgB6FBZZ-Ky_RiZliI-9cgA"
-            icon="youtube"
-            label="Youtube"
-          />
-          <SocialLink
             url="https://www.facebook.com/studioFrostbit"
             icon="facebook"
             label="Facebook"
