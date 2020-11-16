@@ -15,7 +15,7 @@ interface SEOProps {
   description?: string
   lang?: string
   meta?: MetaProps[]
-  title: string
+  title?: string
 }
 
 export function SEO(props: SEOProps) {
