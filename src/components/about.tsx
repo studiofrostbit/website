@@ -17,14 +17,7 @@ export function About() {
           />
         </h2>
         <p className={styles.bodyText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        We are a student company from Norway. Our Team consists of 5 people, 1 artist and 4 programmers. This year we have a goal to release our game on steam before school ends for us in May 2021.</p>
         <div className={styles.floatingThingContainer}>
           <FloatingThing />
         </div>
