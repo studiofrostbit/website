@@ -10,8 +10,8 @@ export function Footer() {
           © 2020 Studio Frostbit. <br />
           All rights reserved.
         </p>
-        <a href="mailto:contact@studiofrostbit.com" className={styles.contact}>
-          contact@studiofrostbit.com
+        <a href="mailto:studiofrostbit@gmail.com" className={styles.contact}>
+          studiofrostbit@gmail.com
         </a>
       </div>
     </section>
