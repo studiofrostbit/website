@@ -8,6 +8,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import icon from "../images/Icon.png"
 
 type MetaProps = JSX.IntrinsicElements["meta"]
 
@@ -59,6 +60,10 @@ export function SEO(props: SEOProps) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: icon
         },
         {
           name: `twitter:card`,
